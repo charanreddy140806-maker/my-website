@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VCR — a premium multi-business brand spanning agriculture, dairy, and business services.">
+  <title>VCR | A Legacy of Excellence</title>
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --panel: #141414;
+      --gold: #d5b46a;
+      --gold-light: #f2dfaa;
+      --cream: #f7f2e7;
+      --muted: #b8b3a7;
+      --line: rgba(213,180,106,.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--black); color: var(--cream); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, 92%); margin: auto; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(11,11,11,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 17px 0; }
+    .logo { font-family: Georgia, serif; color: var(--gold); font-size: 2rem; font-weight: bold; letter-spacing: .18em; }
+    .navlinks { display: flex; gap: 22px; flex-wrap: wrap; font-size: .92rem; color: var(--muted); }
+    .navlinks a:hover, footer a:hover { color: var(--gold-light); }
+    .hero { min-height: 78vh; display: grid; align-items: center; padding: 80px 0; background: radial-gradient(ellipse at 78% 28%, rgba(160,119,43,.20), transparent 42%), linear-gradient(130deg, #0b0b0b 55%, #19150d); }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .22em; font-size: .78rem; font-weight: bold; }
+    h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; line-height: 1.13; }
+    h1 { font-size: clamp(3rem, 8vw, 6.3rem); max-width: 850px; margin: 20px 0; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 620px; color: var(--muted); font-size: 1.1rem; }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    .btn { display: inline-block; padding: 13px 22px; border: 1px solid var(--gold); color: var(--black); background: var(--gold); font-weight: bold; letter-spacing: .04em; }
+    .btn.outline { background: transparent; color: var(--gold-light); }
+    section { padding: 82px 0; }
+    .section-head { max-width: 700px; margin-bottom: 34px; }
+    h2 { font-size: clamp(2.2rem, 5vw, 3.7rem); margin: 12px 0; }
+    .section-head p, .about-copy { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: linear-gradient(150deg, #191919, #101010); border: 1px solid var(--line); padding: 28px; min-height: 260px; transition: transform .2s, border-color .2s; }
+    .card:hover { transform: translateY(-4px); border-color: var(--gold); }
+    .number { color: var(--gold); font-family: Georgia, serif; font-size: 1.3rem; }
+    .card h3 { font-size: 1.65rem; margin: 20px 0 10px; }
+    .card p { color: var(--muted); }
+    .about { background: #111; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+    .brand-mark { min-height: 300px; border: 1px solid var(--line); display: grid; place-items: center; background: radial-gradient(circle, rgba(213,180,106,.13), transparent 62%); }
+    .brand-mark span { color: var(--gold); font: bold clamp(4rem, 12vw, 8rem) Georgia, serif; letter-spacing: .18em; }
+    .values { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+    .values span { border: 1px solid var(--line); padding: 7px 12px; color: var(--gold-light); font-size: .88rem; }
+    .contact-box { border: 1px solid var(--line); padding: clamp(24px, 5vw, 48px); background: linear-gradient(120deg, #17140e, #101010); }
+    .contact-box p { color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 25px 0; color: var(--muted); font-size: .9rem; }
+    .footer-row { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      nav { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .navlinks { gap: 13px; }
+      .grid, .about-layout { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 75px 0; }
+      section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <a class="logo" href="#home" aria-label="VCR home">VCR</a>
+        <div class="navlinks">
+          <a href="#businesses">Businesses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">One Vision · Many Possibilities</div>
+        <h1>Built on trust.<br><span>Driven by ambition.</span></h1>
+        <p>Welcome to VCR — a growing business brand focused on quality, responsible growth, and long-term relationships across agriculture, dairy, and future ventures.</p>
+        <div class="actions">
+          <a class="btn" href="#businesses">Explore Our Businesses</a>
+          <a class="btn outline" href="#contact">Contact VCR</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="businesses">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">What We Do</div>
+          <h2>Our business interests</h2>
+          <p>A flexible brand platform for current operations and future opportunities. Update these cards as your businesses grow.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="number">01 / Agriculture</div>
+            <h3>Growing with the land</h3>
+            <p>Crop cultivation, farm operations, agricultural products, and practical approaches to sustainable growth.</p>
+          </article>
+          <article class="card">
+            <div class="number">02 / Dairy</div>
+            <h3>Freshness you can trust</h3>
+            <p>Dairy farming and milk-based products, with a focus on hygiene, quality, and dependable service.</p>
+          </article>
+          <article class="card">
+            <div class="number">03 / Ventures</div>
+            <h3>Building what comes next</h3>
+            <p>A home for future VCR ventures, partnerships, products, and business services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-layout">
+        <div class="brand-mark" aria-label="VCR brand mark"><span>VCR</span></div>
+        <div>
+          <div class="eyebrow">The VCR Standard</div>
+          <h2>A long-term vision, built step by step.</h2>
+          <p class="about-copy">VCR stands for a commitment to integrity, quality, and progress. We aim to build strong foundations, serve customers responsibly, and grow each business with care.</p>
+          <div class="values"><span>Integrity</span><span>Quality</span><span>Innovation</span><span>Growth</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <div class="eyebrow">Start a Conversation</div>
+          <h2>Let's build something valuable.</h2>
+          <p>For business enquiries, collaborations, or product information, contact the VCR team.</p>
+          <!-- Replace the example email below with your real business email. -->
+          <div class="actions">
+            <a class="btn" href="mailto:yourbusiness@example.com?subject=VCR%20Business%20Enquiry">Email VCR</a>
+            <a class="btn outline" href="#home">Back to Top ↑</a>
+          </div>
+          <p><small>Before publishing, replace <strong>yourbusiness@example.com</strong> with your actual business email and add your verified phone number and social links if desired.</small></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> VCR. All rights reserved.</span>
+      <span>Quality · Trust · Progress</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
